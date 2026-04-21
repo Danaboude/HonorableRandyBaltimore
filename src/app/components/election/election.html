@@ -1,0 +1,100 @@
+<section id="election" class="py-24 bg-slate-900 border-t-8 border-[#da291c] relative overflow-hidden text-white">
+  <!-- Subtle Background Map / Pattern -->
+  <div class="absolute inset-x-0 bottom-0 top-1/2 bg-gradient-to-t from-red-900/20 to-transparent pointer-events-none z-0"></div>
+  <div class="absolute -right-20 -top-20 opacity-5 z-0">
+    <svg width="400" height="400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+    </svg>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="text-center mb-16" appScrollAnimate>
+      <div class="inline-flex items-center justify-center gap-2 px-6 py-2 bg-slate-800 border border-slate-700 text-slate-300 font-semibold rounded-full mb-4 uppercase tracking-widest text-sm">
+        2026 By-Election Results
+      </div>
+      <h3 class="text-4xl md:text-5xl font-outfit font-bold text-white mb-4">A Resounding Victory</h3>
+      <p class="text-slate-400 font-inter max-w-2xl mx-auto text-lg">
+        The people of St. Philip's North delivered a decisive mandate, entrusting Randy Baltimore to continue the powerful legacy of the Antigua and Barbuda Labour Party with a staggering <span class="text-white font-bold">69.42%</span> of the popular vote.
+      </p>
+    </div>
+
+    <!-- Stats Overview & Progress Bars -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      
+      <!-- Key Statistics -->
+      <div class="grid grid-cols-2 gap-6" appScrollAnimate>
+        <!-- Turnout -->
+        <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 hover:border-red-500/50 transition-colors shadow-2xl">
+          <svg class="h-8 w-8 text-red-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+          <div class="text-3xl font-outfit font-bold text-white mb-1">67.27%</div>
+          <div class="text-sm text-slate-400 font-inter uppercase tracking-wider">Voter Turnout</div>
+        </div>
+
+        <!-- Total Votes -->
+        <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 hover:border-red-500/50 transition-colors shadow-2xl">
+          <svg class="h-8 w-8 text-red-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <div class="text-3xl font-outfit font-bold text-white mb-1">1,331</div>
+          <div class="text-sm text-slate-400 font-inter uppercase tracking-wider">Total Valid Votes</div>
+        </div>
+      </div>
+
+      <!-- Live Visualization (The "Animated Chart" Look) -->
+      <div class="bg-slate-800/50 backdrop-blur-md rounded-3xl p-8 border border-slate-700 shadow-2xl" appScrollAnimate>
+        <h4 class="font-outfit font-bold text-2xl text-white mb-8 border-b border-slate-700 pb-4">Popular Vote Breakdown</h4>
+        
+        <div class="space-y-8">
+          <!-- ABLP Candidate -->
+          <div>
+            <div class="flex justify-between items-end mb-3">
+              <div>
+                <span class="block font-outfit font-bold text-xl text-white">Hon. Randy Baltimore</span>
+                <span class="text-xs font-semibold px-2 py-1 bg-red-600/30 text-red-400 rounded-sm uppercase tracking-wider">ABLP</span>
+              </div>
+              <div class="text-right">
+                <span class="block font-outfit font-bold text-2xl text-white">69.42%</span>
+                <span class="text-slate-400 text-sm">924 Votes</span>
+              </div>
+            </div>
+            <div class="h-4 w-full bg-slate-900 rounded-full overflow-hidden">
+              <!-- Using an animation delay to smoothly fill the bar on load -->
+              <div class="h-full bg-gradient-to-r from-red-600 to-red-400 rounded-full" style="width: 0%; animation: fillBarABLP 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards 0.5s;"></div>
+            </div>
+          </div>
+
+          <!-- UPP Candidate -->
+          <div>
+            <div class="flex justify-between items-end mb-3 opacity-75">
+              <div>
+                <span class="block font-outfit font-bold text-lg text-slate-300">Alex Browne</span>
+                <span class="text-xs font-semibold px-2 py-1 bg-blue-600/30 text-blue-400 rounded-sm uppercase tracking-wider">UPP</span>
+              </div>
+              <div class="text-right">
+                <span class="block font-outfit font-bold text-xl text-slate-300">30.58%</span>
+                <span class="text-slate-500 text-sm">407 Votes</span>
+              </div>
+            </div>
+            <div class="h-4 w-full bg-slate-900 rounded-full overflow-hidden">
+              <div class="h-full bg-gradient-to-r from-blue-600 to-blue-400 rounded-full" style="width: 0%; animation: fillBarUPP 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards 0.8s;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+@keyframes fillBarABLP {
+  from { width: 0%; }
+  to { width: 69.42%; }
+}
+@keyframes fillBarUPP {
+  from { width: 0%; }
+  to { width: 30.58%; }
+}
+</style>
